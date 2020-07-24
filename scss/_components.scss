@@ -1,0 +1,299 @@
+.nav {
+   &__links li a {
+      text-transform: uppercase;
+   }
+}
+
+.nav--user {
+   background-color: $white;
+   padding: 1rem 0;
+   
+   & .nav__links li a {
+      color: $primary;
+      font-size: .8rem;
+
+      &:last-child {
+         margin-left: 1rem;
+      }
+   }
+}
+
+.nav--main {
+   background-color: $primary;
+   text-transform: uppercase;
+   font-weight: 700;
+   padding: .6rem 0;
+
+   & .nav__links li a {
+      padding: 0 1.5rem;
+   }
+
+   & .logo {
+      width: 90px;
+   }
+}
+
+.logo {
+   width: 70px;
+}
+
+.btn {
+   display: inline-block;
+   font-weight: 400;
+   border-radius: 4px;
+   padding: 1rem 3rem;
+   text-transform: uppercase;
+   letter-spacing: .1rem;
+
+   &--border {
+      border: 2px solid $white;
+      padding: .7rem 2.2rem;
+   }
+
+   &--primary {
+      background-color: $primary;
+   }
+
+   &--alt {
+      color: rgba(0,0,0,.8);
+      background-color: $white;
+   }
+
+   &--small {
+      padding: 0;
+   }
+}
+
+.header {
+   background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,.7)), url('../img/bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 700px;
+   color: $white;
+
+   &__container {
+      width: 500px;
+      margin-left: 3rem;
+   }
+
+   &__container .logo:first-child {
+      width: 280px;
+   }
+
+   &__logos-container {
+      margin-bottom: 3rem;
+   }
+
+   &__title {
+      font-size: 3rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .3rem;
+      margin-bottom: .8rem;
+   }
+
+   &__text {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+   }
+}
+
+.features {
+   background: linear-gradient(330deg, rgba(70,70,70,1) 0%, rgba(116,116,116,1) 100%);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: $white;
+
+   &__img {
+      height: 60px;
+      margin-bottom: 1.5rem;
+   }
+
+   &__title {
+      text-transform: uppercase;
+      text-align: center;
+   }
+
+   &__text {
+      text-align: center;
+      margin: 1rem 0;
+   }
+
+   &__link {
+      text-transform: uppercase;
+   }
+}
+
+.promos {
+
+   &__promo {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      height: 350px;
+   }
+
+   &__promo:first-child {
+      background-image: url('../img/Group\ 9.jpg');
+   }
+
+   &__promo:last-child {
+      background-image: url('../img/Group\ 9.jpg');
+   }
+
+   &__title {
+      color: $white;
+      font-weight: 400;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      margin-top: 2rem;
+   }
+
+   &__img {
+      margin-top: 2rem;
+   }
+}
+
+.featured-pc {
+   height: 650px;
+
+   &__container {
+      width: 60%;
+      margin-right: 5rem;
+   }
+
+   &__title {
+      color: rgba(0,0,0,.8);
+      font-size: 2.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+   }
+
+   &__text {
+      color: rgba(0,0,0,.8);
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 3rem;
+      line-height: 1.5;
+   }
+}
+
+.refurbished {
+   background-color: $primary;
+
+   &__title {
+      color: $white;
+      font-size: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+   }
+
+   & .btn {
+      margin-bottom: 2.5rem;
+   }
+}
+
+.reviews {
+   background-color: $black1;
+   color: $white;
+   
+   &__container {
+      height: 300px;
+
+      & div {
+         width: 22%;
+      }
+   }
+
+   &__text {
+      text-align: center;
+      line-height: 1.5;
+      margin-top: 2rem;
+   }
+}
+
+.footer-menu {
+   background-color: $black2;
+
+   & > div {
+      padding-bottom: 3rem;
+   }
+
+   &__container ul li {
+      margin-bottom: .5rem;
+
+      & a {
+         color: $purple;
+      }
+   }
+
+   &__container:nth-child(5) ul li a {
+      color: $blue;
+   }
+
+   &__container:nth-child(6) ul li a {
+      color: $cyan;
+   }
+
+   &__title {
+      color: $white;
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-top: 3rem;
+      margin-bottom: .6rem;
+   }
+}
+
+.footer {
+   background-color: $black1;
+
+   &__newsletter {
+      height: 200px;
+      margin-bottom: 3rem;
+   }
+
+   &__title {
+      color: $white;
+      font-size: 2.2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .1rem;
+      margin-bottom: 1rem;
+   }
+
+   &__input {
+      border: none;
+      background-color: rgba(255,255,255,.2);
+      color: rgba(255,255,255,.5);
+      font-size: 1.2rem;
+      border-radius: 5px;
+      width: 50%;
+      padding: 0.5rem 2rem;
+      text-align: center;
+   }
+}
+
+.nav--footer {
+   color: $white;
+
+   &__copy {
+      color: rgba(255,255,255,.5);
+   }
+
+   & .nav__links {
+
+   }
+
+   & .nav__links li a {
+      text-transform: none;
+      color: $yellow;
+      margin-left: 1rem;
+   }
+}

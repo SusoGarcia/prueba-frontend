@@ -1,0 +1,135 @@
+.outer-container {
+   max-width: 1300px;
+   width: 96%;
+   margin: 0 auto;
+}
+
+.container {
+   width: 90%;
+   margin: 0 auto;
+}
+
+.nav {
+   display: flex;
+
+   &__links {
+      display: flex;
+   }
+}
+
+.nav--user {
+   justify-content: space-between;
+}
+
+.nav--main {
+   // justify-content: space-between;
+
+   & div.outer-container {
+      display: flex;
+      justify-content: space-between;
+
+      & div {
+         display: flex;
+         align-items: center;
+      }
+
+      & .logo {
+         margin-right: 3rem;
+      }
+   }
+}
+
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__container {
+   }
+
+   &__logos-container {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+.features {
+   padding: 3.5rem 0;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+
+      & div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         max-width: 240px;
+      }
+   }
+}
+
+.promos {
+   display: flex;
+
+   &__promo {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+.featured-pc {
+   display: flex;
+   align-items: center;
+}
+
+.refurbished {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.reviews {
+   
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
+
+.footer-menu {
+   
+   & > div {
+      display: flex;
+      justify-content: space-between;      
+   }
+}
+
+.footer {
+
+   &__newsletter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+.nav--footer {
+   justify-content: space-between;
+   padding-bottom: 2rem;
+
+   & div, & .nav__links {
+      display: flex;
+      align-items: flex-end;
+   }
+}
