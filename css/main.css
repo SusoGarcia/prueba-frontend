@@ -175,6 +175,28 @@ a {
   margin-right: 3rem;
 }
 
+.nav--footer {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+.nav--footer__copy {
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav--footer .nav__links--icons {
+  font-size: 1.2rem;
+}
+.nav--footer .nav__links li a {
+  text-transform: none;
+  color: #DBE440;
+  margin-left: 1rem;
+}
+.nav--footer .nav__links--footer li a {
+  margin-left: 2rem;
+}
+.nav--footer .fa-caret-up {
+  margin-left: 0.5rem;
+}
+
 .logo {
   width: 70px;
 }
@@ -390,28 +412,6 @@ a {
   width: 50%;
   padding: 0.5rem 2rem;
   text-align: center;
-}
-
-.nav--footer {
-  color: #fff;
-  padding-bottom: 2rem;
-}
-.nav--footer__copy {
-  color: rgba(255, 255, 255, 0.5);
-}
-.nav--footer .nav__links--icons {
-  font-size: 1.2rem;
-}
-.nav--footer .nav__links li a {
-  text-transform: none;
-  color: #DBE440;
-  margin-left: 1rem;
-}
-.nav--footer .nav__links--footer li a {
-  margin-left: 2rem;
-}
-.nav--footer .fa-caret-up {
-  margin-left: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
