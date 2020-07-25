@@ -63,23 +63,26 @@ a {
   display: flex;
   align-items: center;
 }
-.nav--main div.outer-container .logo {
-  margin-right: 3rem;
-}
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .header__logos-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+.header__logos-container div {
+  align-self: flex-end;
 }
 
-.features {
-  padding: 3.5rem 0;
-}
 .features__container {
   display: flex;
   justify-content: space-between;
@@ -95,7 +98,6 @@ a {
   display: flex;
 }
 .promos__promo {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +139,6 @@ a {
 
 .nav--footer {
   justify-content: space-between;
-  padding-bottom: 2rem;
 }
 .nav--footer div, .nav--footer .nav__links {
   display: flex;
@@ -171,6 +172,7 @@ a {
 }
 .nav--main .logo {
   width: 90px;
+  margin-right: 3rem;
 }
 
 .logo {
@@ -216,6 +218,7 @@ a {
 }
 .header__logos-container {
   margin-bottom: 3rem;
+  width: auto;
 }
 .header__title {
   font-size: 3rem;
@@ -234,6 +237,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  padding: 3.5rem 0;
 }
 .features__img {
   height: 60px;
@@ -252,13 +256,16 @@ a {
 }
 
 .promos__promo {
+  width: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  height: 350px;
+  height: 320px;
 }
 .promos__promo:first-child {
-  background-image: url("../img/Group 9.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/ninja.jpg");
+  background-repeat: no-repeat;
+  background-position: 40% 30%;
 }
 .promos__promo:last-child {
   background-image: url("../img/Group 9.jpg");
@@ -277,20 +284,19 @@ a {
 
 .featured-pc {
   height: 650px;
+  color: rgba(0, 0, 0, 0.7);
 }
 .featured-pc__container {
   width: 60%;
   margin-right: 5rem;
 }
 .featured-pc__title {
-  color: rgba(0, 0, 0, 0.8);
   font-size: 2.5rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
 .featured-pc__text {
-  color: rgba(0, 0, 0, 0.8);
   font-size: 1.2rem;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
@@ -318,7 +324,7 @@ a {
   color: #fff;
 }
 .reviews__container {
-  height: 300px;
+  height: 380px;
 }
 .reviews__container div {
   width: 22%;
@@ -361,10 +367,10 @@ a {
 }
 .footer__newsletter {
   height: 200px;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .footer__title {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 2.2rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -372,12 +378,15 @@ a {
   letter-spacing: 0.1rem;
   margin-bottom: 1rem;
 }
+.footer__title span {
+  color: #fff;
+}
 .footer__input {
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.2rem;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 50%;
   padding: 0.5rem 2rem;
   text-align: center;
@@ -385,14 +394,24 @@ a {
 
 .nav--footer {
   color: #fff;
+  padding-bottom: 2rem;
 }
 .nav--footer__copy {
   color: rgba(255, 255, 255, 0.5);
+}
+.nav--footer .nav__links--icons {
+  font-size: 1.2rem;
 }
 .nav--footer .nav__links li a {
   text-transform: none;
   color: #DBE440;
   margin-left: 1rem;
+}
+.nav--footer .nav__links--footer li a {
+  margin-left: 2rem;
+}
+.nav--footer .fa-caret-up {
+  margin-left: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

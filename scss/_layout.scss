@@ -32,10 +32,6 @@
          display: flex;
          align-items: center;
       }
-
-      & .logo {
-         margin-right: 3rem;
-      }
    }
 }
 
@@ -45,16 +41,23 @@
    align-items: center;
 
    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
    }
 
    &__logos-container {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+
+      & div {
+         align-self: flex-end;
+      }
    }
 }
 
 .features {
-   padding: 3.5rem 0;
 
    &__container {
       display: flex;
@@ -73,7 +76,6 @@
    display: flex;
 
    &__promo {
-      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -126,7 +128,6 @@
 
 .nav--footer {
    justify-content: space-between;
-   padding-bottom: 2rem;
 
    & div, & .nav__links {
       display: flex;
