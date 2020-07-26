@@ -20,19 +20,41 @@
    &--border {
       border: 2px solid $white;
       padding: .7rem 2.2rem;
+      transition: background-color, color 0.2s ease-in-out;
+
+      &:hover {
+         background-color: $white;
+         color: $primary;
+      }
    }
 
    &--primary {
       background-color: $primary;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+         box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.4);
+         transform: translate(0, -2px);
+      }
    }
 
    &--alt {
       color: rgba(0,0,0,.8);
       background-color: $white;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+         box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.4);
+         transform: translate(0, -2px);
+      }
    }
 
    &--small {
       padding: 0;
+
+      &:hover {
+         text-decoration: underline;
+      }
    }
 }
 
@@ -91,10 +113,6 @@
    &__text {
       text-align: center;
       margin: 1rem 0;
-   }
-
-   &__link {
-      text-transform: uppercase;
    }
 }
 
@@ -206,6 +224,10 @@
 
       & a {
          color: $purple;
+
+         &:hover {
+            text-decoration: underline;
+         }
       }
    }
 
