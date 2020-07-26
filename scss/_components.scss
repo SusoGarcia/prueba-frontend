@@ -8,9 +8,14 @@
    display: inline-block;
    font-weight: 400;
    border-radius: 4px;
+   border: none;
    padding: 1rem 3rem;
+   background-color: transparent;
+   color: $white;
+   cursor: pointer;
    text-transform: uppercase;
    letter-spacing: .1rem;
+   font-size: 1rem;
 
    &--border {
       border: 2px solid $white;
